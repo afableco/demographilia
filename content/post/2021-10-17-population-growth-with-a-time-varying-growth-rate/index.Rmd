@@ -1,0 +1,91 @@
+---
+title: Population growth with a time varying growth rate
+author: Afableco
+date: '2021-10-17'
+slug: population-growth-with-a-time-varying-growth-rate
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-10-17T22:21:47+11:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+
+bibliography: /Users/jb/Nextcloud/Zotero_local/my_library.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/demographic-research.csl
+output:
+  rmdformats::readthedown
+---
+This article considers the exponential population growth model where the population growth rate is not constant over time.
+
+I have just  started working my way through Andrei Rogers' *Applied Multiregional Demography Through Problems: A Programmed Learning Workbook with Exercises and Solutions* [@rogers2020]. There is an exercise that has the population growth rate decline linearly over time to zero growth. In the preceeding text, the explanation only looks at a case where the growth rate is constant. I was unable to generalise this method to deal with a non-constant case.
+
+I pulled out my copy of *Demographic Methods* [@hinde2014] to see how it presents population growth. It derives the case for constant growth using the same approach as @rogers2020. So I was no further ahead.
+
+In this post I:
+
+- outline the approach used in these books; and then
+- describe a generalised method to derive a solution for the growth rate to vary with regard to time.
+
+## Constant growth
+
+The approach used in the two books moves from an annual constant rate of growth to the continuous case.  Their derivation  uses the following approach.
+
+Say we had a population growing at constant rate of $r$ per annum. If the population size at the start was $P_0$ then after a year the population size would be $P_1 = P_0(1+r)$. Since this can compound over time, then after year $n$ the population size would be $P_n = P_0(1+r)(1+r)...(1+r) = P_0(1+r)^n$. The compounding in this formulation only happens once a year.
+
+In order to move to the continous case, the compunding can be spit into finer time periods. So for example, growth compounding six monthly would be $P_1 = P_0(1+\frac{r}{2})^{2}$ or for n years $P_n = P_0(1+\frac{r}{2})^{2n}$. If the compounding period is reduced to shorter time periods then the equation can be generalised to $P_n = P_0(1+\frac{r}{k})^{kn}$, where $k$ is the number of compounding time periods within a year.
+
+At this point they move to focussing on increasing $k$ toward infinity and using a limit. Taking the compounding part of the formula they derive the limit as $e^r$:$$\lim_{k \to \infty}(1+\frac{r}{k})^{k} = e^r$$ 
+
+This leads to the growth formula as: $$P_n = P_0e^{rn}$$
+
+This is a rather beautiful mathematical result. To explain how $e$ pops out of the above limit @hinde2014 takes a further step to show the binomial expansion of the $(1+\frac{r}{k})^{k}$ for $k=3$, to show how this looks like the power series expansion of the $e^x$.
+
+## Constant growth, now with calculus
+
+So while above is very interesting, I was not able to generalise it to $r$ changing with time. As a result, I was struggling to solve Rogers' exercise. Stepping back, I thought the answer might involve calculus.
+
+My calculus is very rusty. So I turned  to my old friend @thomas1988. With population growth we are seeking to change the population size over time. To express this idea as a differential equation for the constant growth rate expression we would write this as: $$ \frac{dP(t)}{dt} = rP(t)$$. 
+
+In words, the change in the size of the population is proportional to the size of the population. With the proportion in our case being $r$. To solve this we can rearrange and then integrate. $$ \frac{1}{P(t)}dP(t) = r dt$$
+
+This integrates to: $$ln(P(t)) + C = rt$$
+
+Since we want $P(t)$ we can raise both sides to the power of $e$ to get rid of the log: $$P(t)e^C = e^{rt}$$
+
+We can then move the constant $e^C$ to the otherside and since at time zero the equation has to equal the starting population size we can set this to $P(0)$. This leaves us with: $$P(t) = P(0)e^{rt}$$
+
+So we are now back at where we started, but now we have a nice approach for moving to a non-constant growth rate.
+
+## Non-constant growth
+
+Going back to our original calculus based formula and substuting the constant $r$ with a time based function $r(t)$ we get:
+$$ \frac{dP(t)}{dt} = r(t)P(t)$$. 
+
+So now we can solve this as:$$P(t) = P(0)e^{\int{r(t)dt}}$$
+
+Admittedly, the $\int{r(t)dt}$ looks daunting. But in solving this, all we are looking for is the area under the $r(t)$ curve. In Rogers' example, he was using a linearly declining $r(t)$ and solved it using geometry — essentially he recognises that the area under of the $r$ curve is half of the $r \times n$ rectangle.
+
+## A worked example
+
+Say we have a city population that starts with 200,000 people in 2020. Let's say the growth rate starts at 2.5% but is declining linearly to zero over 25 years - ie it is decling by 0.1 percentage points per year. What is the population size expected to be in 2045?
+
+Let's solve $\int{r(t)dt}$. 
+
+From the description $$r(t) = 0.025 - 0.001t$$. 
+
+So $\int_{t=0}^{25} (0.025 - 0.001t) dt$ equals $$0.025t - \dfrac{0.001}{2}t^2 \Big|_{t=0}^{25} = 0.3125$$
+
+So, the population size  in 2045 would be $P_{2045} = 200000 e^{0.3125}$ or 273,368 people.
+
+We can check this geometrically. If we had constant growth of 2.5% we would have had the growth component as $e^{0.025 \times 25}$, but since the area under the curve is $r(t)$ is only half of the $r \times n$ rectangle we could write $e^{\frac{0.025}{2} \times 25}$ which equals $e^{0.3125}$ giving us the same result.
+
+## Conclusion
+I found it quite fun to revisit calculus. I realise that introductory demography textbooks want to step away from this complexity, but I think that in  this case avoiding  calculus limited the class of problems that could be solved without feeling like I just  had to trust the author.
+
+## References
