@@ -1,5 +1,6 @@
 ---
 widget: hero
+
 # Activate this widget? true/false
 active: false
 
