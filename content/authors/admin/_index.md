@@ -1,8 +1,8 @@
 ---
-bio: I am just a plodder trying to get by in the world.
+bio:
 education:
   courses:
-  - course: Master of Social Reseach (Deomography)
+  - course: Master of Social Reseach (Demography)
     institution: Australian National University (ANU)
     year: 2012
   - course: Bachelor of Applied Science (Mathematics)
@@ -39,6 +39,6 @@ interests:
 title: Afableco
 ---
 
-Afableco is too embarassed to say who he/she is.
+Afableco is too embarassed to say who he is. He is just a plodder trying to get along in this world.
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
