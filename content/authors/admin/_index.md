@@ -40,7 +40,9 @@ interests:
 title: 
 ---
 
-Hi. I am Jaro&#x6E;. I will spruce up my bio at some point. For the moment, just know I am a plodder trying to get along in this world. At this stage I don't have any set plans for this blog; I was mostly interested in seeing if I could set it up. My interim plan is to write some posts on subjects that I am interested in. I suspect there won't be  a lot, but I will give it a go.
+Hi. I am Jaron. I will spruce up my bio at some point, but for the moment, just know I am a plodder trying to get along in this world. 
+
+Currently, I don't have any set plans for this blog; I was mostly interested in seeing if I could set it up. My interim plan is to write some posts on subjects that I am interested in. I suspect there won't be a lot, but I will give it a go. I need the practice writing.
 
 *Afableco* means friendliness, affability and kindness in Esperanto. I would like to think that describes me, but sometimes I worry I am more like [Larry Underwood](https://stephenking.fandom.com/wiki/Larry_Underwood) - just less interesting.
 
