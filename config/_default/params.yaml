@@ -30,8 +30,8 @@ address:
   country: Australia
   country_code: AU
 coordinates:
-  latitude: '-35.3043733'
-  longitude: '149.0566465'
+  latitude: '-35.30833'
+  longitude: '149.12471'
 # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
 # office_hours:
 #   - 'Monday 10:00 to 13:00'
