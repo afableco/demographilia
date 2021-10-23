@@ -36,15 +36,15 @@ interests:
 #   icon_pack: fab
 #   link: https://github.com/gcushen
 # superuser: true
-title: Afableco
+title: 
 ---
 
-I am too embarassed to say who I am -- maybe later. For the moment, just know I a plodder trying to get along in this world.
+I am too embarassed to say who I am -- maybe later. For the moment, just know I am a plodder trying to get along in this world. I strive to be better person, but I rarely make progress.
 
-The word *Afableco* is the Esperanto word for affability, kindness. I would like to think that discribes me, but sometimes I worry I am more like Larry Underwood - just less interesting.
+*Afableco* means friendliness, affability and kindness in Esperanto. I would like to think that describes me, but sometimes I worry I am more like Larry Underwood - just less interesting.
 
-I follows the [Giants Netball](https://giantsnetball.com.au/) team in the [Super Netball](https://supernetball.com.au/).
+I follow the [Giants Netball](https://giantsnetball.com.au/) team in the [Super Netball](https://supernetball.com.au/).
 
-I live on the land of Ngunnawal people, who are the Traditional Custodians of the ACT.
+I live and work on the land of Ngunnawal people.
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
