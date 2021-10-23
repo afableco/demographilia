@@ -39,12 +39,12 @@ interests:
 title: 
 ---
 
-I am too embarassed to say who I am -- maybe later. For the moment, just know I am a plodder trying to get along in this world. I strive to be better person, but I rarely make progress.
+I am too embarassed to say who I am -- maybe later. For the moment, just know I am a plodder trying to get along in this world. I strive to be a better person, but I rarely make progress.
 
 *Afableco* means friendliness, affability and kindness in Esperanto. I would like to think that describes me, but sometimes I worry I am more like Larry Underwood - just less interesting.
 
 I follow the [Giants Netball](https://giantsnetball.com.au/) team in the [Super Netball](https://supernetball.com.au/).
 
-I live and work on the land of Ngunnawal people.
+I live and work on the land of [Ngunnawal people](https://www.act.gov.au/ngunnawal-country). I pay my respects to their Elders past, present and emerging.
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
