@@ -1,20 +1,20 @@
 ---
-bio:
-education:
-  courses:
-  - course: Master of Social Research (Demography)
-    institution: Australian National University (ANU)
-    year: 2012
-  - course: Bachelor of Applied Science (Mathematics)
-    institution: Queensland University of Technology
-    year: 1994
-
-email: ""
+# bio:
+# education:
+#   courses:
+#   - course: Master of Social Research (Demography)
+#     institution: Australian National University (ANU)
+#     year: 2012
+#   - course: Bachelor of Applied Science (Mathematics)
+#     institution: Queensland University of Technology
+#     year: 1994
+# 
+# email: ""
 highlight_name: true
 interests:
 - Ageing and Aged Care
 - Demography
-- Netball
+- Suncorp Super Netball
 # organizations:
 # - name: Stanford University
 #   url: https://www.stanford.edu/
@@ -39,6 +39,12 @@ interests:
 title: Afableco
 ---
 
-Afableco is too embarassed to say who he is. He is just a plodder trying to get along in this world.
+I am too embarassed to say who I am -- maybe later. For the moment, just know I a plodder trying to get along in this world.
+
+The word *Afableco* is the Esperanto word for affability, kindness. I would like to think that discribes me, but sometimes I worry I am more like Larry Underwood - just less interesting.
+
+I follows the [Giants Netball](https://giantsnetball.com.au/) team in the [Super Netball](https://supernetball.com.au/).
+
+I live on the land of Ngunnawal people, who are the Traditional Custodians of the ACT.
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
