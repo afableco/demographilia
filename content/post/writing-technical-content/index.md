@@ -1,6 +1,7 @@
 ---
 date: "2019-07-12"
 diagram: true
+draft: true
 highlight: true
 image:
   caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
