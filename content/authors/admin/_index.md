@@ -2,7 +2,7 @@
 bio:
 education:
   courses:
-  - course: Master of Social Reseach (Demography)
+  - course: Master of Social Research (Demography)
     institution: Australian National University (ANU)
     year: 2012
   - course: Bachelor of Applied Science (Mathematics)
