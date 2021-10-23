@@ -4,7 +4,7 @@ author: Afableco
 date: '2021-10-17'
 slug: population-growth-with-a-time-varying-growth-rate
 categories: []
-tags: []
+#tags: []
 subtitle: ''
 summary: ''
 authors: []
@@ -20,6 +20,10 @@ bibliography: /Users/jb/Nextcloud/Zotero_local/my_library.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/demographic-research.csl
 output:
   rmdformats::readthedown
+  
+tags:
+- Demography
+- Population growth
 ---
 This article considers the exponential population growth model where the population growth rate is not constant over time.
 
