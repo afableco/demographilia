@@ -3,8 +3,11 @@ date: "2019-07-12"
 diagram: true
 draft: true
 <<<<<<< HEAD
+<<<<<<< HEAD
 highlight: false
 =======
+=======
+>>>>>>> 41760dff8a317afaef876b75fa90658e6a6e5808
 highlight: true
 >>>>>>> 41760dff8a317afaef876b75fa90658e6a6e5808
 image:
