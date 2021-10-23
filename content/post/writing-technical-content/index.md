@@ -2,7 +2,11 @@
 date: "2019-07-12"
 diagram: true
 draft: true
+<<<<<<< HEAD
 highlight: false
+=======
+highlight: true
+>>>>>>> 41760dff8a317afaef876b75fa90658e6a6e5808
 image:
   caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
   placement: 3
