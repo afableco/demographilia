@@ -13,6 +13,7 @@
 highlight_name: true
 interests:
 - Ageing and Aged Care
+- Population ageing
 - Demography
 - Suncorp Super Netball
 # organizations:
@@ -39,12 +40,12 @@ interests:
 title: 
 ---
 
-I am too embarassed to say who I am -- maybe later. For the moment, just know I am a plodder trying to get along in this world. I strive to be a better person, but I rarely make progress.
+Hi. I am Jaro&#x6E;. I will spruce up my bio at some point. For the moment, just know I am a plodder trying to get along in this world. At this stage I don't have any set plans for this blog; I was mostly interested in seeing if I could set it up. My interim plan is to write some posts on subjects that I am interested in. I suspect there won't be  a lot, but I will give it a go.
 
-*Afableco* means friendliness, affability and kindness in Esperanto. I would like to think that describes me, but sometimes I worry I am more like Larry Underwood - just less interesting.
+*Afableco* means friendliness, affability and kindness in Esperanto. I would like to think that describes me, but sometimes I worry I am more like [Larry Underwood](https://stephenking.fandom.com/wiki/Larry_Underwood) - just less interesting.
 
 I follow the [Giants Netball](https://giantsnetball.com.au/) team in the [Super Netball](https://supernetball.com.au/).
 
-I live and work on the land of [Ngunnawal people](https://www.act.gov.au/ngunnawal-country). I pay my respects to their Elders past, present and emerging.
+I live and work on the land of the [Ngunnawal people](https://www.act.gov.au/ngunnawal-country). I pay my respects to their Elders past, present and emerging.
 
 <!--- {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. --->
