@@ -15,10 +15,21 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+
+
+bibliography: /Users/jb/Nextcloud/Zotero_local/my_library.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/demographic-research.csl
+
 tags:
 - Demography
 - Demographic transition
 
 ---
 
-In this post I examine a technique used for mortality forecasting called the Lee-Carter method. I am hoping this will be a series of posts where I develop a method that exploits an output of this method to numerically classify countries according to were they are within the demographic transition.
+In this post I examine a technique used for mortality forecasting called the Lee-Carter method [@lee1992]. 
+
+# Conclusion
+
+I am hoping this will be a series of posts where I develop a method that exploits an output of this method to numerically classify countries according to were they are within the demographic transition.
+
+## References

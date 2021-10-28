@@ -23,7 +23,7 @@ output:
   
 tags:
 - Demography
-- Population growth
+- Population_growth
 ---
 
 This article considers the exponential population growth model where the population growth rate is not constant over time.
