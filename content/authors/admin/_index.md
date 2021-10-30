@@ -40,13 +40,15 @@ interests:
 title: 
 ---
 
-Hi. I am Jaron. I will spruce up my bio at some point, but for the moment, just know I am a plodder trying to get along in this world. 
+Hi. I am Jaron. 
 
 Currently, I don't have any long-term plans for this blog; I was mostly interested in seeing if I could set it up using `blogdown`. My interim plan is to write some posts on subjects that I am interested in. I suspect there won't be a lot, but I will give it a go. I need the practice writing.
 
-*Afableco* means friendliness, affability and kindness in Esperanto. I would like to think that describes me, but sometimes I worry I am more like [Larry Underwood](https://stephenking.fandom.com/wiki/Larry_Underwood) - just less interesting.
+*Afableco* means friendliness, affability and kindness in Esperanto.
 
 I follow the [Giants Netball](https://giantsnetball.com.au/) team in the [Super Netball](https://supernetball.com.au/).
+
+While I don't expect that I will be writing too many things here that would conflict with the views of my employer, I note that the views on this website are my own and not my employer.
 
 I live and work on the land of the [Ngunnawal people](https://www.act.gov.au/ngunnawal-country). I pay my respects to their Elders past, present and emerging.
 

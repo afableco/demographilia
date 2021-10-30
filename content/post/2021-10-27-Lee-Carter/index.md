@@ -22,7 +22,7 @@ csl: https://raw.githubusercontent.com/citation-style-language/styles/master/dem
 
 tags:
 - Demography
-- Demographic_transition
+- Demographic-transition
 
 ---
 
