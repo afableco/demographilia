@@ -18,9 +18,9 @@ projects: []
 
 bibliography: /Users/jb/Nextcloud/Zotero_local/my_library.bib
 csl: https://raw.githubusercontent.com/citation-style-language/styles/master/demographic-research.csl
-output:
-  rmdformats::readthedown
-  
+
+blogdown.method: 'html'
+
 tags:
 - Demography
 - Population-growth

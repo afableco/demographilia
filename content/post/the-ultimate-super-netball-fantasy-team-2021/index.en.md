@@ -29,3 +29,6 @@ So, I want to get a bit of a hang on how to pick a good team and start next year
 
 ## Thanks
 
+## Conclusion
+
+I look forward to be start of the 2022 season, starting on 26 March.

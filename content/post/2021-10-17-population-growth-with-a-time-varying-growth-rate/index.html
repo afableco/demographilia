@@ -1,0 +1,92 @@
+---
+title: Population growth with a time varying growth rate
+author: Afableco
+date: '2021-10-17'
+slug: population-growth-with-a-time-varying-growth-rate
+categories: []
+#tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-10-17T22:21:47+11:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+
+bibliography: /Users/jb/Nextcloud/Zotero_local/my_library.bib
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/demographic-research.csl
+
+blogdown.method: 'html'
+
+tags:
+- Demography
+- Population-growth
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<p>This article considers the exponential population growth model where the population growth rate is not constant over time.</p>
+<p>I have just started working my way through Andrei Rogers’ <em>Applied Multiregional Demography Through Problems: A Programmed Learning Workbook with Exercises and Solutions</em> <span class="citation">(<a href="#ref-rogers2020" role="doc-biblioref">Rogers 2020</a>)</span>. There is an exercise that has the population growth rate decline linearly over time to zero growth. In the preceeding text, the explanation only looks at a case where the growth rate is constant. I was unable to generalise this method to deal with a non-constant case.</p>
+<p>I pulled out my copy of <em>Demographic Methods</em> <span class="citation">(<a href="#ref-hinde2014" role="doc-biblioref">Hinde 2014</a>)</span> to see how it presents population growth. It derives the case for constant growth using the same approach as <span class="citation"><a href="#ref-rogers2020" role="doc-biblioref">Rogers</a> (<a href="#ref-rogers2020" role="doc-biblioref">2020</a>)</span>. So I was no further ahead.</p>
+<p>In this post I:</p>
+<ul>
+<li>outline the approach used in these books; and then</li>
+<li>describe a generalised method to derive a solution for the growth rate to vary with regard to time.</li>
+</ul>
+<div id="constant-growth" class="section level2">
+<h2>Constant growth</h2>
+<p>The approach used in the two books moves from an annual constant rate of growth to the continuous case. Their derivation uses the following approach.</p>
+<p>Say we had a population growing at constant rate of <span class="math inline">\(r\)</span> per annum. If the population size at the start was <span class="math inline">\(P_0\)</span> then after a year the population size would be <span class="math inline">\(P_1 = P_0(1+r)\)</span>. Since this can compound over time, then after year <span class="math inline">\(n\)</span> the population size would be <span class="math inline">\(P_n = P_0(1+r)(1+r)...(1+r) = P_0(1+r)^n\)</span>. The compounding in this formulation only happens once a year.</p>
+<p>In order to move to the continous case, the compunding can be spit into finer time periods. So for example, growth compounding six monthly would be <span class="math inline">\(P_1 = P_0(1+\frac{r}{2})^{2}\)</span> or for n years <span class="math inline">\(P_n = P_0(1+\frac{r}{2})^{2n}\)</span>. If the compounding period is reduced to shorter time periods then the equation can be generalised to <span class="math inline">\(P_n = P_0(1+\frac{r}{k})^{kn}\)</span>, where <span class="math inline">\(k\)</span> is the number of compounding time periods within a year.</p>
+<p>At this point they move to focussing on increasing <span class="math inline">\(k\)</span> toward infinity and using a limit. Taking the compounding part of the formula they derive the limit as <span class="math inline">\(e^r\)</span>:<span class="math display">\[\lim_{k \to \infty}(1+\frac{r}{k})^{k} = e^r\]</span></p>
+<p>This leads to the growth formula as: <span class="math display">\[P_n = P_0e^{rn}\]</span></p>
+<p>This is a rather beautiful mathematical result. To explain how <span class="math inline">\(e\)</span> pops out of the above limit <span class="citation"><a href="#ref-hinde2014" role="doc-biblioref">Hinde</a> (<a href="#ref-hinde2014" role="doc-biblioref">2014</a>)</span> takes a further step to show the binomial expansion of the <span class="math inline">\((1+\frac{r}{k})^{k}\)</span> for <span class="math inline">\(k=3\)</span>, to show how this looks like the power series expansion of the <span class="math inline">\(e^x\)</span>.</p>
+</div>
+<div id="constant-growth-now-with-calculus" class="section level2">
+<h2>Constant growth, now with calculus</h2>
+<p>So while above is very interesting, I was not able to generalise it to <span class="math inline">\(r\)</span> changing with time. As a result, I was struggling to solve Rogers’ exercise. Stepping back, I thought the answer might involve calculus.</p>
+<p>My calculus is very rusty. So I turned to my old friend <span class="citation"><a href="#ref-thomas1988" role="doc-biblioref">Thomas and Finney</a> (<a href="#ref-thomas1988" role="doc-biblioref">1988</a>)</span>. With population growth we are seeking to change the population size over time. To express this idea as a differential equation for the constant growth rate expression we would write this as: <span class="math display">\[ \frac{dP(t)}{dt} = rP(t)\]</span>.</p>
+<p>In words, the change in the size of the population is proportional to the size of the population. With the proportion in our case being <span class="math inline">\(r\)</span>. To solve this we can rearrange and then integrate. <span class="math display">\[ \frac{1}{P(t)}dP(t) = r dt\]</span></p>
+<p>This integrates to: <span class="math display">\[ln(P(t)) + C = rt\]</span></p>
+<p>Since we want <span class="math inline">\(P(t)\)</span> we can raise both sides to the power of <span class="math inline">\(e\)</span> to get rid of the log: <span class="math display">\[P(t)e^C = e^{rt}\]</span></p>
+<p>We can then move the constant <span class="math inline">\(e^C\)</span> to the otherside and since at time zero the equation has to equal the starting population size we can set this to <span class="math inline">\(P(0)\)</span>. This leaves us with: <span class="math display">\[P(t) = P(0)e^{rt}\]</span></p>
+<p>So we are now back at where we started, but now we have a nice approach for moving to a non-constant growth rate.</p>
+</div>
+<div id="non-constant-growth" class="section level2">
+<h2>Non-constant growth</h2>
+<p>Going back to our original calculus based formula and substuting the constant <span class="math inline">\(r\)</span> with a time based function <span class="math inline">\(r(t)\)</span> we get:
+<span class="math display">\[ \frac{dP(t)}{dt} = r(t)P(t)\]</span>.</p>
+<p>So now we can solve this as:<span class="math display">\[P(t) = P(0)e^{\int{r(t)dt}}\]</span></p>
+<p>Admittedly, the <span class="math inline">\(\int{r(t)dt}\)</span> looks daunting. But in solving this, all we are looking for is the area under the <span class="math inline">\(r(t)\)</span> curve. In Rogers’ example, he was using a linearly declining <span class="math inline">\(r(t)\)</span> and solved it using geometry — essentially he recognises that the area under of the <span class="math inline">\(r\)</span> curve is half of the <span class="math inline">\(r \times n\)</span> rectangle.</p>
+</div>
+<div id="a-worked-example" class="section level2">
+<h2>A worked example</h2>
+<p>Say we have a city population that starts with 200,000 people in 2020. Let’s say the growth rate starts at 2.5% but is declining linearly to zero over 25 years - ie it is decling by 0.1 percentage points per year. What is the population size expected to be in 2045?</p>
+<p>Let’s solve <span class="math inline">\(\int{r(t)dt}\)</span>.</p>
+<p>From the description <span class="math display">\[r(t) = 0.025 - 0.001t\]</span>.</p>
+<p>So <span class="math inline">\(\int_{t=0}^{25} (0.025 - 0.001t) dt\)</span> equals <span class="math display">\[0.025t - \dfrac{0.001}{2}t^2 \Big|_{t=0}^{25} = 0.3125\]</span></p>
+<p>So, the population size in 2045 would be <span class="math inline">\(P_{2045} = 200000 e^{0.3125}\)</span> or 273,368 people.</p>
+<p>We can check this geometrically. If we had constant growth of 2.5% we would have had the growth component as <span class="math inline">\(e^{0.025 \times 25}\)</span>, but since the area under the curve is <span class="math inline">\(r(t)\)</span> is only half of the <span class="math inline">\(r \times n\)</span> rectangle we could write <span class="math inline">\(e^{\frac{0.025}{2} \times 25}\)</span> which equals <span class="math inline">\(e^{0.3125}\)</span> giving us the same result.</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>I found it quite fun to revisit calculus. I realise that introductory demography textbooks want to step away from this complexity, but I think that in this case avoiding calculus limited the class of problems that could be solved without feeling like I just had to trust the author.</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-hinde2014" class="csl-entry">
+Hinde, A. (2014). <em>Demographic <span>Methods</span></em>. <span>Routledge</span>.
+</div>
+<div id="ref-rogers2020" class="csl-entry">
+Rogers, A. (2020). <em>Applied <span>Multiregional Demography Through Problems</span>: A <span>Programmed Learning Workbook</span> with <span>Exercises</span> and <span>Solutions</span></em>. <span>Springer Nature</span>.
+</div>
+<div id="ref-thomas1988" class="csl-entry">
+Thomas, G.B. and Finney, R.L. (1988). <em>Calculus and Analytic Geometry</em>. 7th ed. <span>Reading, Mass</span>: <span>Addison-Wesley Pub. Co</span>.
+</div>
+</div>
+</div>
